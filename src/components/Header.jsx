@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 const HeaderArea = styled.header`
   display: flex;
@@ -10,10 +10,11 @@ const HeaderArea = styled.header`
   background-color: crimson;
   padding: 20px;
   margin-bottom: 70px;
-
+  
   a {
     text-decoration: none;
     color: white;
+
     &:hover {
       text-decoration: underline;
     }
@@ -23,8 +24,9 @@ const HeaderArea = styled.header`
 export const Header = () => {
   return (
     <HeaderArea>
-      <Link to="/">Store</Link>
+      <Link to="/store">Store</Link>
       <Link to="/cart">Cart</Link>
-    </HeaderArea>
-  );
-};
+      <Link to="/profile">My Profile</Link>
+    </HeaderArea>  
+  )
+}
